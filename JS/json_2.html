@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON- local Storage</title>
+</head>
+<body>
+  <script>
+     let product ={
+      name: 'TShirt',
+      price: 789,
+      rating: {
+        stars: 4.5,
+        noOfReviews:453,
+      },
+    };
+
+    // localStorage.setItem('Name','khushi');
+    // localStorage.setItem('Price','656787');
+
+    // console.log(localStorage.getItem('Name'));
+    localStorage.setItem('product',JSON.stringify(product));
+    console.log(localStorage.getItem('product'));
+  </script>
+  
+</body>
+</html>
